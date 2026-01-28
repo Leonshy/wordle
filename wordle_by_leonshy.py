@@ -9,7 +9,6 @@ bd_palabras = [
 ]
 wordle = random.choice(bd_palabras)
 wordle=wordle.upper() #Convertimos la palabra en mayuscula
-print (wordle)
 # Hay que definir las variables (lo hacemos mientras vamos necesitando)
 # Hay una "PALABRA DEL DIA"
 # La palabra ingresada solo puede tener 5 letras ---> inf len(palabra) == 5 (entra al juego)
@@ -69,7 +68,7 @@ while oportunidades < 6: #tenemos 6 oportunidades
             break        
         oportunidades = oportunidades + 1
         if oportunidades > 5:
-            print("PERDISTE, mejor suerte la proxima")
+            print(f"PERDISTE, la palabra es {wordle} mejor suerte la proxima")
             break
     else:
         print("la palabra que ingresaste no es valida debe ser de 5 caracteres") 
