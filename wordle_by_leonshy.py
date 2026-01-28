@@ -1,32 +1,14 @@
-#palabra del día Wordle
-wordle = "MUNDO"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Aqui se va a elegir 1 palabra al azar traida de la base de datos
+import random
+bd_palabras = [
+    "amigo", "arroz", "plaza", "fresa", "perla",
+    "nieve", "carta", "campo", "tarde", "noche",
+    "gente", "huevo", "reloj", "salud", "silla",
+    "coche", "lucha", "banco", "lente", "claro",
+    "dulce", "largo", "costo", "pista", "trapo"
+]
+wordle = random.choice(bd_palabras)
+print (wordle)
 # Hay que definir las variables (lo hacemos mientras vamos necesitando)
 # Hay una "PALABRA DEL DIA"
 # La palabra ingresada solo puede tener 5 letras ---> inf len(palabra) == 5 (entra al juego)
@@ -47,7 +29,6 @@ wordle = "MUNDO"
 
 
 print("Bienvenidos a WORDLE by leonshy")
-wordle = "MUNDO"
 oportunidades = 0 # va a contar la cantdad de palabras ingresadasa correctamente 
 while oportunidades < 6: #tenemos 6 oportunidades
     print("-----------------------------------------")
