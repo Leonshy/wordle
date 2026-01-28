@@ -8,6 +8,7 @@ bd_palabras = [
     "dulce", "largo", "costo", "pista", "trapo"
 ]
 wordle = random.choice(bd_palabras)
+wordle=wordle.upper() #Convertimos la palabra en mayuscula
 print (wordle)
 # Hay que definir las variables (lo hacemos mientras vamos necesitando)
 # Hay una "PALABRA DEL DIA"
@@ -34,6 +35,8 @@ while oportunidades < 6: #tenemos 6 oportunidades
     print("-----------------------------------------")
     print(f"Oportunidad #{oportunidades+1}")
     palabra = input("ingrese una palabra en mayuscula")
+#   converit la palabra ingresada en mayuscula
+    palabra = palabra.upper()
 #   primero vamos a verificar si es que la palabra ingresada tiene 5 letras
     if len(palabra) == 5: #En caso que coincida entramos al juego 
         aciertos = 0 #asignamos un contador que si llega a 5 es porque se gano el juego
